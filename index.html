@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NooTek - Leading Tech E-Commerce Platform</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="./images/logo.png" alt="nootek_logo"></a>
+            <!-- <p>Your Reliable Tech Marketplace</p> -->
+        </div>
+        <div class="search-bar-container">
+            <p id="state">{State}</p>
+            <input type="text" id="search-bar" placeholder="Search available tech devices">
+            <button id="search-bar-button">search</button>
+        </div>
+        <div id="account-management">
+            <a href="#">{Flag}</a>
+            <a href="#">{Switch}</a>
+            <a href="#">Sign In / Register</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <nav>
+        <div id="menu">Menu</div>
+        <ul id="nav-bar">
+            <a href=""><li>Today's Deals</li></a>
+            <a href=""><li>Compare</li></a>
+            <a href=""><li>Ai Assistant</li></a>
+            <a href=""><li>Fairly Used</li></a>
+            <a href=""><li>Promo Sales</li></a>
+            <a href="#"><li>Help Center</li></a>
+        </ul>
+    </nav>
+    <div id="banner">
+        <p id="headline"> Leading Online Tech Store</p>
+        <p id="sub-headline">Let our AI assistance help you decide</p>
+    </div>
+
+    <br>
+    <section id="about">
+        <h2>About NooTek</h2>
+        <p>NooTek is a tech-focused e-commerce business specializing in selling and shipping high-quality laptops across Nigeria. Our platform enables customers to search, compare, and purchase top tech devices at the best prices from major retailers like Amazon and Jumia.</p>
+        <p>We aim to bridge the gap between affordability and accessibility, ensuring customers get the best value for their money. Our objectives include expanding our product range, enhancing user experience, and offering exclusive deals.</p>
+    </section>
+    
+    <br>
+    <section class="form">
+        <h2>Register Now</h2>
+    
+        <form action="#" method="post">
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+    
+            <label for="device">Preferred Laptop Brand:</label>
+            <select id="device" name="device">
+                <option value="">Select a Brand</option>
+                <option value="hp">HP</option>
+                <option value="dell">Dell</option>
+                <option value="apple">Apple</option>
+                <option value="lenovo">Lenovo</option>
+            </select>
+            <br><br>
+    
+            <label>Gender:</label><br>
+            <div id="gender-choice">
+                <label for="male">Male</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Female</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+            </div>
+            <br><br>
+    
+            <label>Interests:</label><br>
+            <div id="interest-choice">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="coding" name="interests[]" value="coding">
+                <label for="design">Design</label><br>
+                <input type="checkbox" id="design" name="interests[]" value="design">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="gaming" name="interests[]" value="gaming">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="reading" name="interests[]" value="reading">
+            </div>
+            <br><br>
+    
+            <div id="terms-container">
+                <label for="terms">Kindly accept our <a href="#">Terms</a> of agreement:</label>
+                <input type="checkbox" id="terms" name="terms">
+            </div>
+            <br><br>
+    
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    
+    <br>
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>Emmanuel Obelenge</td>
+                <td>obeleemmanuel@gmail.com</td>
+                <td>08030980657</td>
+                <td>Lagos, Nigeria</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>08123456789</td>
+                <td>Abuja, Nigeria</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>09087654321</td>
+                <td>Port Harcourt, Nigeria</td>
+            </tr>
+            <tr>
+                <td>Michael Johnson</td>
+                <td>michaelj@example.com</td>
+                <td>08011223344</td>
+                <td>Kano, Nigeria</td>
+            </tr>
+            <tr>
+                <td>Aisha Bello</td>
+                <td>aishabello@example.com</td>
+                <td>07099887766</td>
+                <td>Ibadan, Nigeria</td>
+            </tr>
+        </table>
+    </section>
+    
+    <br>
+    <section>
+        <h2>Explore Our Store</h2>
+        <p>Click <a href="https://nootek.com" target="_blank">here</a> to visit our Online Shop and discover exclusive deals.</p>
+    </section>
+    <br><br><br>
+
+    <footer>
+        <p>&copy Copyright - Emmanuel Obelenge | PLP FEB 2025</p>;
+    </footer>
+</body>
+</html>

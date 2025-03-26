@@ -1,0 +1,254 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #f0f3f6;
+    max-height: 70px;
+    color: #1C3D5A;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 65px;
+    margin-right: 10px;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 70%;
+    min-width: 250px;
+    padding: 5px;
+}
+
+#search-bar {
+    width: 70%;
+    height: 2rem;
+    margin: 0 5px;
+}
+
+#search-bar-button {
+    height: 2rem;
+    width: 15%;
+    min-width: 50px;
+}
+
+#account-management {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#account-management a {
+    color: #1C3D5A;
+    padding: 6px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+#menu {
+    margin: 5px;
+}
+
+#account-management a:hover {
+    background-color: orange;
+    color: #FFFFFF;
+    border: 1px solid #005bb5;
+    border-radius: 10px;
+}
+
+nav, #nav-bar {
+    background-color: #277fd7;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2px;
+    margin: 0px;
+    overflow-x: auto;
+}
+
+#nav-bar a {
+    margin-right: 10px;
+    padding: 5px;
+    list-style-type: none;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+#nav-bar a:hover{
+    border: 1px solid orange;
+    background-color: #005bb5;
+    border-radius: 10px;
+}
+
+/* Banner */
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    height: 90vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: fit-content;
+}
+
+#headline, #sub-headline {
+    text-align: center;
+}
+#headline {
+    font-size: 5rem;
+}
+
+#sub-headline {
+    color: yellow;
+    font-size: 2rem;
+}
+
+/* Form */
+.form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#gender-choice, #interest-choice, #terms-container {
+    display: inline-flex;
+    gap: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+#gender-choice label, #interest-choice label {
+    margin-left: 30px;
+}
+
+#interest-choice {
+    margin: 0;
+}
+
+#terms-container input {
+   width: 20px;
+   margin-left: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #277fd7;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 2rem;
+    margin-left: 35%;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0073e6;
+    color: white;
+}
+footer p {
+    text-align: center;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form input, form select {
+        font-size: 16px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+} */
